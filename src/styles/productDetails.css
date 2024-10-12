@@ -1,0 +1,161 @@
+.product-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-to-cart-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  .product-image {
+    max-width:70%;
+    height: auto;
+  }
+  
+  .additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .additional-image {
+    width: 250px;
+   height: 1500px;
+    object-fit: cover;
+    margin: 5px;
+  }
+
+  .similar-product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .similar-product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .similar-product-price {
+    color: #007bff;
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  .image-container {
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .slide-down {
+    max-height: 500px; /* Adjust to a value large enough to fit content */
+    opacity: 1;
+  }
+  
+  .slide-up {
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .product-description {
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  .show-description {
+    max-height: 500px; /* Adjust as needed */
+    opacity: 1;
+  }
+  
+  .hide-description {
+    max-height: 0;
+    opacity: 0;
+  }
+   
+
+
+/* Card image styles */
+.card-img-top,
+.carousel-item img {
+  width: 100%; /* Make the image cover the full width of the card */
+  height: auto; /* Allow the height to adjust automatically */
+  object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+  max-height: 250px; /* Set a max height for the image, adjust as needed */
+}
+
+/* Ensure the card text area has enough height for multi-line text */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Ensure the card title and text are properly spaced and aligned */
+.card-title,
+.card-text {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+/* Button styles for consistency */
+.btn {
+  width: 100%;
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Responsive adjustments for headings */
+h1, h2 {
+  font-size: 1.5em;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.25em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+/* Billboard styles */
+.billboard {
+  background: url('shoe.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.billboard-content {
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.billboard h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.billboard p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.billboard Button {
+  font-size: 1.25rem;
+}
